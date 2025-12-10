@@ -1,0 +1,45 @@
+.edit-page {
+    width: 100%;
+    padding: 20px 30px;
+}
+
+.edit-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.back-icon {
+    font-size: 1.25rem;
+    transition: 0.25s;
+}
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+.edit-section {
+    background: var(--background-white);
+    padding: 24px;
+    border-radius: 18px;
+    box-shadow: var(--shadow-soft);
+    max-width: var(--max-width);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.edit-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 32px;
+}
+
+.edit-actions {
+    text-align: right;
+    align-self: flex-end;
+    margin-right: 60px;
+}

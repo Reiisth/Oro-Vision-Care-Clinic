@@ -1,0 +1,250 @@
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding: 20px;
+}
+
+.patient-search {
+    position: relative;
+    width: 80%;
+}
+
+.bar-and-btn {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+.patient-search input {
+    width: 100%;
+    padding: 12px 16px 12px 45px;
+    border-radius: 14px;
+    border: 1px solid var(--border-main);
+    font-size: 1rem;
+    outline: none;
+    transition: 0.25s;
+    background: #fff;
+}
+
+.patient-search input:focus {
+    border-color: var(--gold-main);
+    box-shadow: 0 0 0 3px rgba(212,175,55,0.25);
+}
+
+.patient-search .search-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    opacity: .6;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: var(--shadow-soft);
+    margin: 20px;
+}
+
+.patient-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.name-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-main {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.name-sub {
+    font-size: 0.85rem;
+    color: var(--muted);
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 2px;
+}
+
+
+.patient-table th {
+    text-align: left;
+    padding: 16px 20px 12px 20px;
+    font-family: 'Lexend';
+    font-weight: 400;
+    background: var(--proper-cream);
+    border-bottom: 2px solid var(--border-main);
+    font-size: 0.9rem;
+}
+
+.patient-table td {
+    padding: 10px 20px 10px 20px;
+    border-bottom: 1px solid var(--background-white);
+    vertical-align: top;
+    font-size: .8rem;
+}
+
+.patient-table tr:hover {
+    background: var(--background-main)
+}
+
+.action-buttons {
+    display: flex;
+    gap: 6px;
+}
+
+
+.contact-block {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contact-line {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    color: var(--text-dark);
+}
+
+.contact-icon {
+    font-size: 1rem;
+    color: var(--gold-main);
+    opacity: 0.9;
+    flex-shrink: 0;
+}
+
+.view-icon {
+    font-size: 18px; /* smaller icon */
+    opacity: 0.85;
+    color: var(--gold-main);
+}
+
+
+/* Action column container */
+.action-col {
+    position: relative;
+}
+
+/* Three-dot button */
+.action-menu-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.action-menu-btn:hover {
+    background: var(--off-white);
+}
+
+.action-menu-btn .material-symbols-rounded {
+    font-size: 22px;
+    color: var(--text-dark);
+}
+
+.action-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease;
+}
+
+.icon-btn span {
+    font-size: 20px; /* adjust icon size */
+}
+
+/* Edit */
+.edit-icon span {
+    color: var(--gold-main);
+}
+
+.edit-icon:hover {
+    background: rgba(212,175,55,0.15);
+}
+
+/* Delete */
+.delete-icon span {
+    color: #cc0000;
+}
+
+.delete-icon:hover {
+    background: rgba(255,0,0,0.1);
+}
+
+
+
+
+/* Modal */
+.modal-card {
+    background: #fff;
+    width: min(600px, 90%);
+    padding: 32px 32px 40px 32px;
+    border-radius: 24px;
+    animation: fadeSlide .35s ease;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.close-btn { cursor: pointer; }
+
+.patient-info-block h3 {
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+}
+
+.patient-info-block .sub {
+    font-size: 0.95rem;
+    color: var(--muted);
+}
+
+.history-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 24px;
+}
+
+.history-grid label {
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--gold-main);
+}
+
+.history-grid p {
+    font-size: 0.9rem;
+    color: var(--text-main);
+    margin-top: 4px;
+}
+
+

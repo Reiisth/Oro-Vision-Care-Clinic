@@ -1,0 +1,206 @@
+
+
+
+/* ===========================
+   HEADINGS
+=========================== */
+h2, h3 {
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+    background: var(--gold-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 25px;
+    color: #4b5563;
+}
+
+
+/* ===========================
+   FORM CONTAINER (PREMIUM CARD)
+=========================== */
+.signup-form {
+    background: var(--background-white);
+    width: 100%;
+    max-width: 900px;
+    padding: 56px 48px;
+    margin: 0 auto 40px auto;
+
+    border-radius: 32px;
+    box-shadow: var(--shadow-card);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 32px;
+
+    animation: fadeSlide 0.8s ease forwards;
+    transform: translateY(12px);
+    opacity: 0;
+}
+
+@keyframes fadeSlide {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+.section-title {
+    grid-column: span 2;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--gold-main);
+    border-bottom: 2px solid var(--border-main);
+}
+
+
+
+.page-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    max-width: 1250px;
+}
+
+header {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.page-title-wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+.page-subtitle {
+    margin:0;
+    padding: 0;
+    text-align: left;
+}
+
+.back-btn {
+    margin:0;
+}
+
+
+
+
+
+/* ===========================
+   LABELS
+=========================== */
+.signup-form label {
+    font-size: 0.95rem;
+    font-weight: 400;
+    font-family: 'Lexend', sans-serif;
+    color: var(--text-dark);
+    margin-bottom: 6px;
+    display: block;
+    letter-spacing: 0.3px;
+    transition: var(--transition);
+}
+
+
+/* ===========================
+   INPUTS + SELECTS
+=========================== */
+.signup-form input,
+.signup-form select {
+    padding: 14px 16px;
+    border-radius: 14px;
+    border: 1px solid var(--border-main);
+    background: #fafafa;
+    font-size: 1rem;
+    transition: 0.3s ease;
+    width: 100%;
+    max-width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+    border-color: var(--gold-main);
+    box-shadow: 0 0 0 3px rgba(212,175,55,0.28);
+    outline: none;
+    background: #ffffff;
+}
+
+.signup-field:focus-within label {
+    color: var(--gold-main);
+}
+
+
+/* ===========================
+   PASSWORD EYE ICON
+=========================== */
+.password-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding-right: 50px;
+}
+
+.toggle-eye {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 22px;
+    color: #6b7280;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.toggle-eye:hover {
+    opacity: 1;
+}
+
+
+/* ===========================
+   PREMIUM BUTTON
+=========================== */
+.btn-primary-pill {
+    grid-column: span 2;
+    font-size: 1.2rem;
+    height: 48px;
+    margin-top: 28px;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+@media (max-width: 700px) {
+    .signup-form {
+        grid-template-columns: 1fr;
+        padding: 30px 28px;
+        gap: 22px;
+    }
+
+    .signup-form .full,
+    .signup-btn {
+        grid-column: span 1;
+    }
+}

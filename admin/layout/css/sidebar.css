@@ -1,0 +1,215 @@
+/* ---------------------------
+   SIDEBAR LAYOUT
+---------------------------- */
+
+
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background: #ffffff;
+    border-right: 1px solid #d9d9d9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+
+
+/* Title / Branding */
+.sidebar-logo {
+    text-align: center;
+    width: 70px;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 30px 20px;    
+    background: linear-gradient(var(--off-white) 10%, white 90%);
+    border-bottom: 2px solid var(--border-main);
+}
+
+.logo-img {
+    width: 100%;
+}
+
+.sidebar-title {
+    font-family: "Lexend", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.sidebar-subtitle {
+    font-family: "Lexend", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--text-main);
+
+}
+
+/* Menu Container */
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item a,
+.group-toggle {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+}
+
+.menu-icon {
+    font-size: 22px;
+    opacity: 1;
+    flex-shrink: 0;
+}
+
+.group-arrow {
+    margin-left: auto;         
+    font-size: 20px;
+    opacity: 0.7;
+    transition: transform 0.25s;
+}
+
+
+
+.group-arrow.open {
+    transform: rotate(90deg);
+}
+
+
+/* ---------------------------
+   MAIN MENU ITEMS (Non-collapsible)
+---------------------------- */
+
+.menu-item a {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    margin: 2px 0;
+    font-size: 1rem;
+    font-family: "Lexend", sans-serif;
+    color: #333;
+    text-decoration: none;
+    transition: 0.25s;
+    height: auto;
+}
+
+
+.menu-item a:hover {
+    background: linear-gradient(to right, var(--off-white), white);
+}
+
+.menu-item.active a {
+    background: var(--gold-gradient);
+    color: #fff;
+    font-weight: 600;
+}
+
+
+/* ---------------------------
+   GROUP MENU (Patients, Employees, Transactions)
+---------------------------- */
+
+.menu-group {
+    margin-bottom: 5px;
+}
+.group-arrow.closed {
+    transform: rotate(0deg);
+}
+/* Parent Button */
+.group-toggle {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    padding: 12px 20px;
+    margin: 2px 0;
+    font-size: 1rem;
+    font-family: "Lexend", sans-serif;
+    color: #333;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.group-toggle:hover {
+    background: linear-gradient(to right, var(--off-white), white);
+}
+
+/* Parent Active */
+.group-toggle.open {
+    background: linear-gradient(to right, var(--off-white), white);
+    color: var(--gold-main);
+    font-weight: 600;
+    border-left: 3px solid var(--gold-main);
+}
+
+.group-toggle.open .group-arrow {
+    transform: rotate(90deg);
+}
+
+/* ---------------------------
+   SUBMENU STYLING
+---------------------------- */
+
+.submenu {
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 5px;
+    display: none;
+}
+
+.submenu.show {
+    display: block;
+}
+
+/* Submenu links */
+.submenu li a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-family: "Lexend", sans-serif;
+    color: #444;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.submenu li a:hover {
+    background: linear-gradient(to right, var(--off-white), white);
+}
+
+/* Submenu active */
+.submenu li.active a {
+    font-weight: 600;
+    color: var(--background-white);
+    background: var(--gold-gradient);
+}
+
+
+/* ---------------------------
+   SCROLLBAR (Nice + Minimal)
+---------------------------- */
+
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,.15);
+    border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,0,0,.25);
+}

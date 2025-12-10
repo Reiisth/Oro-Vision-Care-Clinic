@@ -1,0 +1,136 @@
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease;
+}
+
+.action-icons {
+    display: flex;
+    gap: 8px;       /* space between edit & delete */
+    align-items: center;
+    justify-content: center; /* optional: centers them */
+}
+
+.icon-btn {
+    margin: 0;
+}
+
+
+.icon-btn span {
+    font-size: 20px; /* adjust icon size */
+}
+.contact-icon {
+    font-size: 1rem;
+    color: var(--gold-main);
+    opacity: 0.9;
+    flex-shrink: 0;
+}
+
+.contact-line {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    color: var(--text-dark);
+}
+
+.edit-icon{
+    width: 32px;
+}
+
+/* Edit */
+.edit-icon span {
+    color: var(--gold-main);
+}
+
+.edit-icon:hover {
+    background: rgba(212,175,55,0.15);
+}
+
+/* Delete */
+.delete-icon span {
+    color: #cc0000;
+}
+
+.delete-icon:hover {
+    background: rgba(255,0,0,0.1);
+}
+
+
+.table-wrapper {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow-x: auto;
+}
+
+.centered {
+    text-align: center;
+}
+
+.patient-table td.action-icons,
+.patient-table th.centered {
+    text-align: center !important;
+}
+
+.qty-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.qty-input {
+    width: 60px;
+    text-align: center;
+    padding: 6px 8px;
+    border: 1px solid var(--border-main);
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.qty-btn {
+    width: 32px;             
+    height: 32px;            
+    border: none;
+    background: var(--gold-main);
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;      /* Perfect circle */
+    cursor: pointer;
+    transition: 0.2s;
+
+    /* Prevent stretching */
+    padding: 0;
+    line-height: 32px;       /* Match height */
+    display: inline-flex;    /* Important */
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+/* Minus button */
+.qty-btn.minus {
+    background: #d9534f;
+}
+
+.qty-btn:hover {
+    background: #b8922a;
+}
+
+/* Minus button style */
+.qty-btn.minus {
+    background: #d9534f;
+}
+
+.qty-btn.minus:hover {
+    background: #b13430;
+}
+
+

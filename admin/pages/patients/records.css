@@ -1,0 +1,258 @@
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    padding: 20px;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    padding: 16px 20px 12px 20px;
+    background: var(--proper-cream);
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    border-bottom: 2px solid var(--border-main);
+}
+
+td {
+    font-size: 0.85rem;
+    padding: 10px 20px 10px 20px;
+}
+
+tr {
+    border-bottom: 1px solid var(--border-main);
+}
+
+tr:hover {
+    background: var(--background-main);
+}
+
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.search-and-add-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 12px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.main-with-thick-header {
+    padding-top: 160px;
+    width: 100%;
+}
+
+.thick-header-container{
+    width: 100%;
+    margin: 0 20px;
+    max-width: 1400px;
+}
+
+.name-main {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease;
+}
+
+.icon-sm {
+    font-size: 20px;
+}
+
+.icon-btn span {
+    font-size: 20px; /* adjust icon size */
+}
+
+.delete-icon span {
+    color: #cc0000;
+}
+
+.delete-icon:hover {
+    background: rgba(255,0,0,0.1);
+}
+
+.search-container {
+    position: relative;
+    width: 80%;
+}
+.search-container input {
+    padding: 12px 16px 12px 45px;
+    width: 100%;
+    border-radius: 14px;
+    border: 1px solid var(--border-main);
+    font-size: 1rem;
+    outline: none;
+    transition: 0.25s;
+    background: #fff;
+}
+
+.search-container input:focus {
+    border-color: var(--gold-main);
+    box-shadow: 0 0 0 3px rgba(212,175,55,0.25);
+}
+
+.search-container input:focus + .search-icon {
+    color: var(--gold-main);
+}
+
+.search-container .search-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    opacity: .6;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: var(--shadow-soft);
+    padding-bottom: 10px;
+}
+
+
+
+/* TEST RECORD MODAL — matches patient modal styling */
+.test-modal {
+    width: 600px;
+    max-width: 95%;
+    border-radius: 18px;
+    background: #ffffff;
+    overflow: hidden;
+    animation: fadeIn 0.25s ease-out;
+}
+
+/* Header */
+.test-modal .modal-header {
+    padding: 18px 22px;
+    border-bottom: 1px solid #e5e5e5;
+    background: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.test-modal .modal-header h2 {
+    margin: 0;
+}
+
+.test-modal .close-btn {
+    font-size: 26px;
+    cursor: pointer;
+    color: var(--grey-dark, #555);
+}
+
+/* Body */
+.test-modal .modal-body {
+    padding: 22px 26px;
+}
+
+/* Grid layout for test results */
+.test-modal .history-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 20px;
+}
+
+/* Labels */
+.test-modal label {
+    font-family: 'Lexend', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--muted, #777);
+}
+
+/* Values */
+.test-modal p {
+    font-size: 15px;
+    margin-top: 4px;
+    color: var(--text, #333);
+}
+
+/* Muted fallback */
+.txt-muted {
+    color: var(--muted, #888);
+    font-style: italic;
+}
+
+/* Patient Name + Date Block */
+.modal-info-block {
+    margin-bottom: 20px;
+}
+
+.modal-patient-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-dark, #333);
+    margin: 0;
+}
+
+.modal-case-date {
+    margin-top: 4px;
+    font-size: 14px;
+    color: var(--muted, #777);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.date-icon {
+    font-size: 18px;
+    color: var(--muted, #777);
+}
+
+
+
+
+/* Fade animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.96); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+
+
+.gold-alert {
+    background: #fff8e1;
+    color: #b38700;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    animation: slideDown 0.3s ease-out;
+}
+
+.gold-alert.hide {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}

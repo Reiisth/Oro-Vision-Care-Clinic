@@ -1,0 +1,223 @@
+.invoice-wrapper {
+    background: #ffffff;
+    padding: 30px 35px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    max-width: 900px;
+    margin: 20px auto;
+    font-family: 'Lexend', sans-serif;
+}
+
+.invoice-wrapper h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+form label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+    font-size: 0.9rem;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 0.95rem;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    font-family: inherit;
+    transition: 0.2s;
+}
+
+form input:focus,
+form select:focus {
+    border-color: var(--gold-main);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+    outline: none;
+}
+.ts-control {
+    background: white !important;
+    border-radius: 10px !important;
+    padding: 8px 10px !important;
+    border: 1px solid #ddd !important;
+    font-size: 0.95rem !important;
+}
+
+.ts-control:focus {
+    border-color: var(--gold-main) !important;
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2) !important;
+}
+
+.ts-dropdown {
+    border-radius: 10px !important;
+    border: 1px solid #ccc !important;
+}
+.invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+.date-fields {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.date-fields label {
+    flex-shrink: 0;
+    margin: 0;
+}
+
+.date-field{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.invoice-table th {
+    background: #fafafa;
+    font-weight: 700;
+    padding: 12px;
+    border-bottom: 2px solid #eee;
+    text-align: left;
+}
+
+.invoice-table td {
+    padding: 12px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.invoice-table input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.invoice-table input:focus {
+    border-color: var(--gold-main);
+    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+}
+#addItemBtn {
+    align-items: center;
+    gap: 6px;
+    background: var(--gold-main);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+    transition: 0.2s;
+    font-size: 0.95rem;
+}
+
+#statusSelect {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-family: 'Lexend', sans-serif;
+    margin-bottom: 15px;
+}
+
+#statusSelect:focus {
+    border-color: var(--gold-main);
+    box-shadow: 0 0 0 3px rgba(212,175,55,0.2);
+}
+
+
+#addItemBtn:hover {
+    opacity: 0.85;
+}
+
+.remove-btn {
+    background: #ffe8e8;
+    color: #d93025;
+    border: none;
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.form-actions {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 12px;
+}
+
+.btn-back {
+    background: #eee;
+    color: #555;
+    padding: 10px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.25s;
+    display: flex;
+    align-items: center;
+    gap: 6px; 
+}
+
+.btn-back:hover {
+    background: #ddd;
+}
+
+.remove-btn:hover {
+    background: #ffd2d2;
+}
+.total-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.total-box {
+    background: #fafafa;
+    padding: 18px 20px;
+    border-radius: 12px;
+    width: 260px;
+    border: 1px solid #eee;
+}
+
+.total-box p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.total-box .total span:last-child {
+    font-weight: 700;
+    color: var(--gold-main);
+    font-size: 1.15rem;
+}
+button[type="submit"] {
+    background: var(--gold-main);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: 0.2s;
+}
+
+button[type="submit"]:hover {
+    opacity: 0.85;
+}
+
+.save-btn {
+    margin-left: auto;
+}

@@ -1,0 +1,100 @@
+
+
+/* Main section */
+#login-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Restored original container layout */
+.login-container {
+  background: linear-gradient(var(--background-white), var(--background-main));
+  border-radius: var(--card-corner);
+  padding: 48px 32px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+  margin: auto;
+}
+
+/* Headings (same structure, premium style) */
+.login-container h2 {
+  font-family: "Lexend", sans-serif;
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e293b;
+  background: var(--gold-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.login-container h3 {
+  font-family: "Lexend", sans-serif;
+  margin-bottom: 32px;
+  font-size: 1.25rem;
+}
+
+/* Form spacing restored to your original intent */
+form {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field-group {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field-group label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-main);
+}
+
+.field-group:focus-within label {
+  color: var(--gold-main);
+}
+
+/* Inputs */
+.login-input {
+  padding: 14px 16px;
+  border: 1px solid var(--border-main);
+  border-radius: 12px;
+  font-size: 1.1rem;
+  transition: 0.3s ease;
+  width: 100%;
+  background: var(--background-white);
+}
+
+
+.login-input:focus {
+  border-color: var(--gold-main);
+  box-shadow: 0 0 0 3px rgba(212,175,55,0.28);
+  outline: none;
+}
+
+/* Error messages restored to original behavior */
+.error-message {
+  color: #b91c1c;
+  text-align: left;
+  font-size: 1rem;
+  margin-bottom: -8px; /* keeps it attached EXACTLY like your old layout */
+  font-weight: bold;
+}
+
+.btn-primary-pill {
+  font-size: 1.2rem;
+  margin-top: 16px;
+  width: 100%;
+  height: 48px;
+  align-self: stretch;
+}

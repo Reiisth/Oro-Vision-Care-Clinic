@@ -1,0 +1,60 @@
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease;
+}
+
+.action-icons {
+    display: flex;
+    gap: 8px;       /* space between edit & delete */
+    align-items: center;
+    justify-content: center; /* optional: centers them */
+}
+
+
+
+.icon-btn span {
+    font-size: 20px; /* adjust icon size */
+}
+.contact-icon {
+    font-size: 1rem;
+    color: var(--gold-main);
+    opacity: 0.9;
+    flex-shrink: 0;
+}
+
+.contact-line {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    color: var(--text-dark);
+}
+
+.edit-icon{
+    width: 32px;
+}
+
+/* Edit */
+.edit-icon span {
+    color: var(--gold-main);
+}
+
+.edit-icon:hover {
+    background: rgba(212,175,55,0.15);
+}
+
+/* Delete */
+.delete-icon span {
+    color: #cc0000;
+}
+
+.delete-icon:hover {
+    background: rgba(255,0,0,0.1);
+}

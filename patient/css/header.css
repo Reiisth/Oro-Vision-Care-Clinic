@@ -1,0 +1,11 @@
+
+
+    .back-btn .back-icon {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 8px;
+      flex-shrink:0;
+      font-variation-settings: "wght" 500;
+    }

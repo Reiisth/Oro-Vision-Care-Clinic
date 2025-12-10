@@ -4,13 +4,13 @@
 Import the SQL database first before running the system in the browser. 
 Make sure it has the name: **oro_vision_care_clinic**
 
-Account Credentials for Demo:
+## Account Credentials for Demo:
 
-## Admin Portal
+### Admin Portal
 **Patient ID:** 1 <br>
 **Password:** adminadmin
 
-## Patient Portal
+### Patient Portal
 **Patient ID:** 2 <br>
 **Password:** ptptpt
 
